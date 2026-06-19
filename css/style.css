@@ -1,0 +1,101 @@
+/* All Common Css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/* All Common Css end */
+.main{
+    position: relative;
+}
+.one{
+    height: 300px;
+    width: 300px;
+    background-color: teal;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    z-index: 1;
+}
+.two{
+    height: 300px;
+    width: 300px;
+    background-color:tomato;
+    position: absolute;
+    top: 25px ;
+    left: 25px;
+}
+.three{
+    height: 300px;
+    width: 300px;
+    background-color:blueviolet;
+    position: absolute;
+    top: 50px ;
+    left: 50px;
+    z-index: 2;
+}
+
+/* Before-after r use suru */
+.mainone{
+    width: 500px;
+    background-color: purple;
+    margin: 0 auto;
+    padding: 200px ;
+}
+.mainone h2{
+    display: inline-block;
+    position: relative;
+}
+
+.mainone h2::before{
+    position:absolute;
+    height: 2px;
+    width: 50px;
+    background: red;
+    content: "";
+    bottom: 8px;
+    left: -50px;
+}
+
+.mainone h1{
+    display: inline-block;
+    position: relative;
+}
+
+.mainone h1::before{
+    position:absolute;
+    height: 2px;
+    width: 50px;
+    background: red;
+    content: "";
+    bottom: 0;
+    left: 0;
+}
+
+.mainone h1::after{
+    position:absolute;
+    height: 2px;
+    width: 50px;
+    background:  red;
+    content: "";
+    top: 0;
+    right: 0;
+}
+.mainone h3{
+    display: inline-block;
+    position: relative;
+}
+
+.mainone h3::after{
+    position:absolute;
+    height: 2px;
+    width: 50px;
+    background: red;
+    content: "";
+    top: -8px;
+    right: -50px;
+}
+
+
+/* Before-after r use suru */
